@@ -3,5 +3,33 @@ layout: home
 image: images/logo.png
 ---
 
+<html>
 
+<body>
 
+  <div style="display: flex; flex-direction: column; width: 100%; justify-content: center; align-items: center;">
+    <h1 id="typewriter" style="text-align: center;">
+  </div>
+
+</body>
+
+<script>
+  var i = 0;
+  var txt = "Welcome the best franchise in APCS history.";
+
+  var speed = 150;
+  function typeWriter(x) {
+
+    if (i <= txt.length) {
+      document.getElementById("typewriter").innerHTML = txt.substring(0, i)
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+
+  }
+
+  typeWriter();
+
+</script>
+
+</html>
